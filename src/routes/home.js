@@ -1,5 +1,29 @@
 import ButtonLink from "../components/ButtonLink";
+import ResponsiveImage from "../components/ResponsiveImage";
 import "./home.css";
+
+// Imported Images
+import enjoyablePlaceImgTablet from "../images/homepage/enjoyable-place-tablet.jpg";
+import enjoyablePlaceImgDesktop from "../images/homepage/enjoyable-place-desktop.jpg";
+import enjoyablePlaceImgMobile from "../images/homepage/enjoyable-place-mobile.jpg";
+import locallySourcedImgMobile from "../images/homepage/locally-sourced-mobile.jpg";
+import locallySourcedImgTablet from "../images/homepage/locally-sourced-tablet.jpg";
+import locallySourcedImgDesktop from "../images/homepage/locally-sourced-desktop.jpg";
+import salmonImgMobile from "../images/homepage/salmon-mobile.jpg";
+import salmonImgDesktopTablet from "../images/homepage/salmon-desktop-tablet.jpg";
+import beefImgMobile from "../images/homepage/beef-mobile.jpg";
+import beefImgDesktopTablet from "../images/homepage/beef-desktop-tablet.jpg";
+import chocolateImgMobile from "../images/homepage/chocolate-mobile.jpg";
+import chocolateImgDesktopTablet from "../images/homepage/chocolate-desktop-tablet.jpg";
+import familyGatheringImgMobile from "../images/homepage/family-gathering-mobile.jpg";
+import familyGatheringImgTablet from "../images/homepage/family-gathering-tablet.jpg";
+import familyGatheringImgDesktop from "../images/homepage/family-gathering-desktop.jpg";
+import specialEventsImgMobile from "../images/homepage/special-events-mobile.jpg";
+import specialEventsImgTablet from "../images/homepage/special-events-tablet.jpg";
+import specialEventsImgDesktop from "../images/homepage/special-events-desktop.jpg";
+import socialEventsImgMobile from "../images/homepage/social-events-mobile.jpg";
+import socialEventsImgTablet from "../images/homepage/social-events-tablet.jpg";
+import socialEventsImgDesktop from "../images/homepage/social-events-desktop.jpg";
 
 const Home = () => {
   return (
@@ -10,40 +34,100 @@ const Home = () => {
         freshest produce from the comfort of our farmhouse.
       </p>
       <ButtonLink textContent="Book a table" route="/booking" linkClasses="" />
+      <ResponsiveImage
+        mobileImg={enjoyablePlaceImgMobile}
+        tabletImg={enjoyablePlaceImgTablet}
+        desktopImg={enjoyablePlaceImgDesktop}
+        imgDescription=""
+        imgClasses=""
+      />
       <h2>Enjoyable place for all the family</h2>
       <p>
         Our relaxed surroundings make dining with us a great experience for
         everyone. We can even arrange a tour of the farm before your meal.
       </p>
+      <ResponsiveImage
+        mobileImg={locallySourcedImgMobile}
+        tabletImg={locallySourcedImgTablet}
+        desktopImg={locallySourcedImgDesktop}
+        imgDescription=""
+        imgClasses=""
+      />
       <h2>The most locally sourced food</h2>
       <p>
         All our ingredients come directly from our farm or local fishery. So you
         can be sure that you’re eating the freshest, most sustainable food.
       </p>
-      <section>
-        <h2>A few highlights from our menu</h2>
-        <p>
+      <section className="menu">
+        <h2 className="subheading">A few highlights from our menu</h2>
+        <p className="paragraph">
           We cater for all dietary requirements, but here’s a glimpse at some of
           our diner’s favourites. Our menu is revamped every season.
         </p>
-        <h3>Seared Salmon Fillet</h3>
-        <p>
+        <ResponsiveImage
+          mobileImg={salmonImgMobile}
+          tabletImg={salmonImgDesktopTablet}
+          desktopImg={salmonImgDesktopTablet}
+          imgDescription=""
+          imgClasses="menu-image"
+        />
+        <h3 className="menu-item-name">Seared Salmon Fillet</h3>
+        <p className="menu-item-description">
           Our locally sourced salmon served with a refreshing buckwheat summer
           salad.
         </p>
-        <h3>Rosemary Filet Mignon</h3>
-        <p>
+        <ResponsiveImage
+          mobileImg={beefImgMobile}
+          tabletImg={beefImgDesktopTablet}
+          desktopImg={beefImgDesktopTablet}
+          imgDescription=""
+          imgClasses="menu-image"
+        />
+        <h3 className="menu-item-name">Rosemary Filet Mignon</h3>
+        <p className="menu-item-description">
           Our prime beef served to your taste with a delicious choice of
           seasonal sides.
         </p>
-        <h3>Summer Fruit Chocolate Mousse</h3>
-        <p>
+        <ResponsiveImage
+          mobileImg={chocolateImgMobile}
+          tabletImg={chocolateImgDesktopTablet}
+          desktopImg={chocolateImgDesktopTablet}
+          imgDescription=""
+          imgClasses="menu-image"
+        />
+        <h3 className="menu-item-name">Summer Fruit Chocolate Mousse</h3>
+        <p className="menu-item-description">
           Creamy mousse combined with summer fruits and dark chocolate shavings.
         </p>
       </section>
       <button>Family Gathering</button>
       <button>Special Events</button>
       <button>Social Events</button>
+      <div className="carousel">
+        <div className="image-container">
+          <ResponsiveImage
+            mobileImg={familyGatheringImgMobile}
+            tabletImg={familyGatheringImgTablet}
+            desktopImg={familyGatheringImgDesktop}
+            imgDescription=""
+            imgClasses=""
+          />
+          <ResponsiveImage
+            mobileImg={specialEventsImgMobile}
+            tabletImg={specialEventsImgTablet}
+            desktopImg={specialEventsImgDesktop}
+            imgDescription=""
+            imgClasses=""
+          />
+          <ResponsiveImage
+            mobileImg={socialEventsImgMobile}
+            tabletImg={socialEventsImgTablet}
+            desktopImg={socialEventsImgDesktop}
+            imgDescription=""
+            imgClasses=""
+          />
+        </div>
+      </div>
       <section>
         <h2>Family Gathering</h2>
         <p>
@@ -70,11 +154,11 @@ const Home = () => {
       </section>
       <ButtonLink textContent="Book a table" route="/booking" linkClasses="" />
       <section className="cta">
-        <h2>Ready to make a reservation?</h2>
+        <h2 className="subheading">Ready to make a reservation?</h2>
         <ButtonLink
           textContent="Book a table"
           route="/booking"
-          linkClasses=""
+          linkClasses="cta-button"
         />
       </section>
     </>

@@ -1,0 +1,9 @@
+.booking {
+  background-image: url("./images/booking/hero-bg-mobile.jpg");
+  background-size: 100% 600px;
+}
+
+.home {
+  background-image: url("./images/homepage/hero-bg-mobile.jpg");
+  background-size: 100% 748px;
+}

@@ -1,3 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600;700&display=swap");
+
+:root {
+  --font: "Spartan", sans-serif;
+  --beaver: hsl(27, 22%, 51%);
+  --cod-gray: hsl(0, 0%, 7%);
+  --mirage: hsl(234, 30%, 13%);
+  --ebony-clay: hsl(218, 21%, 18%);
+  --shuttle-gray: hsl(217, 14%, 42%);
+  --white: hsl(0, 0%, 100%);
+  --white-transparent1: hsla(0, 0%, 100%, 0.15);
+}
+
+/* CSS Reset */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font);
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+}
+
+img,
+svg {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* Shared Styles */
 
 .visually-hidden {
@@ -9,4 +54,23 @@
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+.container {
+  width: min(87.2%, 32.7rem);
+  margin-inline: auto;
+}
+
+.subheading {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  letter-spacing: -0.4px;
+}
+
+.paragraph {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.1875px;
 }

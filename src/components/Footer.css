@@ -12,6 +12,7 @@
   margin-top: 3.2rem;
 }
 
+.footer .subheading,
 .footer-detail {
   display: block;
   color: var(--white);
