@@ -28,14 +28,7 @@ function App() {
   return (
     <>
       <Logo logoClasses="header-logo" />
-      <Outlet
-        context={[
-          reservationCount,
-          setReservationCount,
-          increaseCount,
-          decreaseCount,
-        ]}
-      />
+      <Outlet context={[reservationCount, increaseCount, decreaseCount]} />
       <Footer />
     </>
   );

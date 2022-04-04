@@ -3,8 +3,7 @@ import Form from "../components/Form";
 import "./booking.css";
 
 const Booking = () => {
-  const [reservationCount, setReservationCount, increaseCount, decreaseCount] =
-    useOutletContext();
+  const [reservationCount, increaseCount, decreaseCount] = useOutletContext();
   return (
     <>
       <h1 className="main-heading">Reservations</h1>
