@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="footer">
-      <Logo />
+      <Logo logoClasses="footer-logo" />
       <address className="container">
         <span className="footer-detail">Marthwaite, Sedbergh</span>
         <span className="footer-detail">Cumbria</span>

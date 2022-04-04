@@ -28,36 +28,45 @@ import socialEventsImgDesktop from "../images/homepage/social-events-desktop.jpg
 const Home = () => {
   return (
     <>
-      <h1>Exquisite dining since 1989</h1>
-      <p>
-        Experience our seasonal menu in beautiful country surroundings. Eat the
-        freshest produce from the comfort of our farmhouse.
-      </p>
-      <ButtonLink textContent="Book a table" route="/booking" linkClasses="" />
-      <ResponsiveImage
-        mobileImg={enjoyablePlaceImgMobile}
-        tabletImg={enjoyablePlaceImgTablet}
-        desktopImg={enjoyablePlaceImgDesktop}
-        imgDescription=""
-        imgClasses=""
-      />
-      <h2>Enjoyable place for all the family</h2>
-      <p>
-        Our relaxed surroundings make dining with us a great experience for
-        everyone. We can even arrange a tour of the farm before your meal.
-      </p>
-      <ResponsiveImage
-        mobileImg={locallySourcedImgMobile}
-        tabletImg={locallySourcedImgTablet}
-        desktopImg={locallySourcedImgDesktop}
-        imgDescription=""
-        imgClasses=""
-      />
-      <h2>The most locally sourced food</h2>
-      <p>
-        All our ingredients come directly from our farm or local fishery. So you
-        can be sure that you’re eating the freshest, most sustainable food.
-      </p>
+      <section className="hero">
+        <h1 className="main-heading">Exquisite dining since 1989</h1>
+        <p className="paragraph">
+          Experience our seasonal menu in beautiful country surroundings. Eat
+          the freshest produce from the comfort of our farmhouse.
+        </p>
+        <ButtonLink
+          textContent="Book a table"
+          route="/booking"
+          linkClasses="cta-button"
+        />
+      </section>
+      <section className="about">
+        <ResponsiveImage
+          mobileImg={enjoyablePlaceImgMobile}
+          tabletImg={enjoyablePlaceImgTablet}
+          desktopImg={enjoyablePlaceImgDesktop}
+          imgDescription=""
+          imgClasses="about-image"
+        />
+        <h2 className="subheading">Enjoyable place for all the family</h2>
+        <p className="paragraph">
+          Our relaxed surroundings make dining with us a great experience for
+          everyone. We can even arrange a tour of the farm before your meal.
+        </p>
+        <ResponsiveImage
+          mobileImg={locallySourcedImgMobile}
+          tabletImg={locallySourcedImgTablet}
+          desktopImg={locallySourcedImgDesktop}
+          imgDescription=""
+          imgClasses="about-image"
+        />
+        <h2 className="subheading">The most locally sourced food</h2>
+        <p className="paragraph">
+          All our ingredients come directly from our farm or local fishery. So
+          you can be sure that you’re eating the freshest, most sustainable
+          food.
+        </p>
+      </section>
       <section className="menu">
         <h2 className="subheading">A few highlights from our menu</h2>
         <p className="paragraph">
@@ -100,59 +109,63 @@ const Home = () => {
           Creamy mousse combined with summer fruits and dark chocolate shavings.
         </p>
       </section>
-      <button>Family Gathering</button>
-      <button>Special Events</button>
-      <button>Social Events</button>
-      <div className="carousel">
+      <section className="events">
         <div className="image-container">
           <ResponsiveImage
             mobileImg={familyGatheringImgMobile}
             tabletImg={familyGatheringImgTablet}
             desktopImg={familyGatheringImgDesktop}
             imgDescription=""
-            imgClasses=""
+            imgClasses="event-image active"
           />
           <ResponsiveImage
             mobileImg={specialEventsImgMobile}
             tabletImg={specialEventsImgTablet}
             desktopImg={specialEventsImgDesktop}
             imgDescription=""
-            imgClasses=""
+            imgClasses="event-image"
           />
           <ResponsiveImage
             mobileImg={socialEventsImgMobile}
             tabletImg={socialEventsImgTablet}
             desktopImg={socialEventsImgDesktop}
             imgDescription=""
-            imgClasses=""
+            imgClasses="event-image"
           />
         </div>
-      </div>
-      <section>
-        <h2>Family Gathering</h2>
-        <p>
-          We love catering for entire families. So please bring everyone along
-          for a special meal with your loved ones. We’ll provide a memorable
-          experience for all.
-        </p>
+        <button className="event-option active">Family Gathering</button>
+        <button className="event-option">Special Events</button>
+        <button className="event-option">Social Events</button>
+        <section className="event-description active">
+          <h2 className="subheading">Family Gathering</h2>
+          <p className="paragraph">
+            We love catering for entire families. So please bring everyone along
+            for a special meal with your loved ones. We’ll provide a memorable
+            experience for all.
+          </p>
+        </section>
+        <section className="event-description">
+          <h2 className="subheading">Special Events</h2>
+          <p className="paragraph">
+            Whether it’s a romantic dinner or special date you’re celebrating
+            with others we’ll look after you. We’ll be sure to mark your special
+            date with an unforgettable meal.
+          </p>
+        </section>
+        <section className="event-description">
+          <h2 className="subheading">Social Events</h2>
+          <p className="paragraph">
+            Are you looking to have a larger social event? No problem! We’re
+            more than happy to cater for big parties. We’ll work with you to
+            make your event a hit with everyone.
+          </p>
+        </section>
+        <ButtonLink
+          textContent="Book a table"
+          route="/booking"
+          linkClasses="cta-button"
+        />
       </section>
-      <section>
-        <h2>Special Events</h2>
-        <p>
-          Whether it’s a romantic dinner or special date you’re celebrating with
-          others we’ll look after you. We’ll be sure to mark your special date
-          with an unforgettable meal.
-        </p>
-      </section>
-      <section>
-        <h2>Social Events</h2>
-        <p>
-          Are you looking to have a larger social event? No problem! We’re more
-          than happy to cater for big parties. We’ll work with you to make your
-          event a hit with everyone.
-        </p>
-      </section>
-      <ButtonLink textContent="Book a table" route="/booking" linkClasses="" />
       <section className="cta">
         <h2 className="subheading">Ready to make a reservation?</h2>
         <ButtonLink

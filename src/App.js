@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <Logo />
+      <Logo logoClasses="header-logo" />
       <Outlet />
       <Footer />
     </>

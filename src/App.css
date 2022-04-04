@@ -1,9 +1,14 @@
+.home {
+  background-image: url("./images/homepage/hero-bg-mobile.jpg");
+  background-size: 100% 748px;
+}
+
 .booking {
   background-image: url("./images/booking/hero-bg-mobile.jpg");
   background-size: 100% 600px;
 }
 
-.home {
-  background-image: url("./images/homepage/hero-bg-mobile.jpg");
-  background-size: 100% 748px;
+.home .header-logo {
+  margin: 23.2rem auto 0;
+  height: 3.2rem;
 }

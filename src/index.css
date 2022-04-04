@@ -4,11 +4,13 @@
   --font: "Spartan", sans-serif;
   --beaver: hsl(27, 22%, 51%);
   --cod-gray: hsl(0, 0%, 7%);
+  --dark-gray: hsla(0, 0%, 30%, 1);
   --mirage: hsl(234, 30%, 13%);
   --ebony-clay: hsl(218, 21%, 18%);
   --shuttle-gray: hsl(217, 14%, 42%);
   --white: hsl(0, 0%, 100%);
   --white-transparent1: hsla(0, 0%, 100%, 0.15);
+  --shadow: rgba(56, 66, 85, 0.503223);
 }
 
 /* CSS Reset */
@@ -41,6 +43,12 @@ svg {
 
 a {
   text-decoration: none;
+}
+
+button {
+  display: block;
+  background: none;
+  border: 1px solid transparent;
 }
 
 /* Shared Styles */
