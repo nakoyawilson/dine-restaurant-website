@@ -1,0 +1,9 @@
+.booking .main-heading {
+  margin: 4rem auto 0;
+}
+
+.booking .paragraph {
+  width: min(87.2%, 32.7rem);
+  margin: 1.6rem auto 0;
+  color: var(--white);
+}

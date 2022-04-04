@@ -8,7 +8,14 @@
   background-size: 100% 600px;
 }
 
+.header-logo {
+  height: 3.2rem;
+}
+
 .home .header-logo {
   margin: 23.2rem auto 0;
-  height: 3.2rem;
+}
+
+.booking .header-logo {
+  margin: 5.6rem auto 0;
 }

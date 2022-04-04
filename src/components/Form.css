@@ -1,0 +1,72 @@
+.form {
+  background-color: var(--white);
+  width: min(87.2%, 32.7rem);
+  margin: 17.9rem auto 8.6rem;
+  box-shadow: 0 75px 100px -50px var(--shadow);
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.form-input {
+  padding: 0.6rem 1.6rem 1.6rem;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--input-border);
+  color: var(--cod-gray);
+}
+
+::placeholder {
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  color: var(--cod-gray);
+  opacity: 0.5;
+}
+
+.input-label {
+  display: block;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  color: var(--cod-gray);
+  margin-bottom: 0.8rem;
+  text-align: left;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 1.8rem;
+  background-color: var(--cod-gray);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--input-border);
+  padding-bottom: 1.6rem;
+}
+
+.counter-button {
+  padding: 0 1.6rem;
+}
+
+.reservation-count {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  color: #151515;
+}
