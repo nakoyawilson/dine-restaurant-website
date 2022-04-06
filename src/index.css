@@ -97,3 +97,30 @@ input {
   line-height: 2.5rem;
   letter-spacing: -0.1875px;
 }
+
+/* Media Queries */
+
+@media screen and (min-width: 376px) {
+  .container {
+    width: min(74.6%, 57.3rem);
+  }
+
+  .main-heading {
+    font-size: 4.8rem;
+    line-height: 6.4rem;
+    letter-spacing: -0.6px;
+    width: min(59.5%, 45.7rem);
+  }
+
+  .subheading {
+    font-size: 4rem;
+    line-height: 5.6rem;
+    letter-spacing: -0.5px;
+  }
+
+  .paragraph {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    letter-spacing: -0.225px;
+  }
+}

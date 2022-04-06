@@ -19,3 +19,27 @@
 .booking .header-logo {
   margin: 5.6rem auto 0;
 }
+
+/* Media Queries */
+@media screen and (min-width: 376px) {
+  .home {
+    background-image: url("./images/homepage/hero-bg-tablet.jpg");
+    background-size: 100% 992px;
+  }
+
+  .booking {
+    background-image: url("./images/booking/hero-bg-tablet.jpg");
+  }
+
+  .header-logo {
+    height: 4rem;
+  }
+
+  .home .header-logo {
+    margin: 37.4rem auto 0;
+  }
+
+  .booking .header-logo {
+    margin: 5.6rem auto 0 3.9rem;
+  }
+}
