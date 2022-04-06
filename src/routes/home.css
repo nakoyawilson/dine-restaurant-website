@@ -247,16 +247,20 @@
 
   .about picture:last-of-type {
     position: relative;
+    border: 5px solid red;
   }
 
-  .about picture:last-of-type::after {
+  .about picture:last-of-type::before {
     content: "";
     width: 16rem;
     height: 7.6rem;
     position: absolute;
-    bottom: 5.6rem;
-    right: -5.8rem;
-    border: 5px solid red;
+    top: 0;
+    right: 0;
+    background-image: url("../images/patterns/pattern-lines.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .about .subheading {
@@ -270,5 +274,26 @@
 
   .about .paragraph {
     width: min(59.5%, 45.7rem);
+  }
+
+  /* Menu */
+
+  .menu {
+    padding: 13.5rem 0 9.6rem;
+    margin-top: 12rem;
+  }
+
+  .menu .subheading {
+    width: min(57.9%, 44.5rem);
+  }
+
+  .menu .paragraph {
+    width: min(57.9%, 44.5rem);
+    margin: 1.6rem auto 5.6rem;
+  }
+
+  .menu-image {
+    width: 12.8rem;
+    margin-inline: auto;
   }
 }
