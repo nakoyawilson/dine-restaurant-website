@@ -23,3 +23,22 @@
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
+/* Media Queries */
+@media screen and (min-width: 376px) {
+  .footer {
+    padding: 6.4rem 4rem 6.4rem 3.9rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    text-align: left;
+    gap: 12.958rem;
+  }
+
+  .footer-logo {
+    margin: 0;
+  }
+
+  .footer .container {
+    margin: 0;
+  }
+}

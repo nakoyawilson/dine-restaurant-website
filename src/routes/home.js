@@ -73,41 +73,56 @@ const Home = () => {
           We cater for all dietary requirements, but here’s a glimpse at some of
           our diner’s favourites. Our menu is revamped every season.
         </p>
-        <ResponsiveImage
-          mobileImg={salmonImgMobile}
-          tabletImg={salmonImgDesktopTablet}
-          desktopImg={salmonImgDesktopTablet}
-          imgDescription=""
-          imgClasses="menu-image"
-        />
-        <h3 className="menu-item-name">Seared Salmon Fillet</h3>
-        <p className="menu-item-description">
-          Our locally sourced salmon served with a refreshing buckwheat summer
-          salad.
-        </p>
-        <ResponsiveImage
-          mobileImg={beefImgMobile}
-          tabletImg={beefImgDesktopTablet}
-          desktopImg={beefImgDesktopTablet}
-          imgDescription=""
-          imgClasses="menu-image"
-        />
-        <h3 className="menu-item-name">Rosemary Filet Mignon</h3>
-        <p className="menu-item-description">
-          Our prime beef served to your taste with a delicious choice of
-          seasonal sides.
-        </p>
-        <ResponsiveImage
-          mobileImg={chocolateImgMobile}
-          tabletImg={chocolateImgDesktopTablet}
-          desktopImg={chocolateImgDesktopTablet}
-          imgDescription=""
-          imgClasses="menu-image"
-        />
-        <h3 className="menu-item-name">Summer Fruit Chocolate Mousse</h3>
-        <p className="menu-item-description">
-          Creamy mousse combined with summer fruits and dark chocolate shavings.
-        </p>
+        <div className="menu-items">
+          <div className="menu-item-wrapper">
+            <ResponsiveImage
+              mobileImg={salmonImgMobile}
+              tabletImg={salmonImgDesktopTablet}
+              desktopImg={salmonImgDesktopTablet}
+              imgDescription=""
+              imgClasses="menu-image"
+            />
+            <div>
+              <h3 className="menu-item-name">Seared Salmon Fillet</h3>
+              <p className="menu-item-description">
+                Our locally sourced salmon served with a refreshing buckwheat
+                summer salad.
+              </p>
+            </div>
+          </div>
+          <div className="menu-item-wrapper">
+            <ResponsiveImage
+              mobileImg={beefImgMobile}
+              tabletImg={beefImgDesktopTablet}
+              desktopImg={beefImgDesktopTablet}
+              imgDescription=""
+              imgClasses="menu-image"
+            />
+            <div>
+              <h3 className="menu-item-name">Rosemary Filet Mignon</h3>
+              <p className="menu-item-description">
+                Our prime beef served to your taste with a delicious choice of
+                seasonal sides.
+              </p>
+            </div>
+          </div>
+          <div className="menu-item-wrapper">
+            <ResponsiveImage
+              mobileImg={chocolateImgMobile}
+              tabletImg={chocolateImgDesktopTablet}
+              desktopImg={chocolateImgDesktopTablet}
+              imgDescription=""
+              imgClasses="menu-image"
+            />
+            <div>
+              <h3 className="menu-item-name">Summer Fruit Chocolate Mousse</h3>
+              <p className="menu-item-description">
+                Creamy mousse combined with summer fruits and dark chocolate
+                shavings.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <section className="events">
         <div className="image-container">
@@ -133,9 +148,11 @@ const Home = () => {
             imgClasses="event-image"
           />
         </div>
-        <button className="event-option active">Family Gathering</button>
-        <button className="event-option">Special Events</button>
-        <button className="event-option">Social Events</button>
+        <div className="event-options">
+          <button className="event-option active">Family Gathering</button>
+          <button className="event-option">Special Events</button>
+          <button className="event-option">Social Events</button>
+        </div>
         <section className="event-description active">
           <h2 className="subheading">Family Gathering</h2>
           <p className="paragraph">
