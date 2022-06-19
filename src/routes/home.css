@@ -436,3 +436,38 @@
     margin: 2.3rem auto 0;
   }
 }
+
+@media screen and (min-width: 769px) {
+  /* Hero */
+
+  .hero .main-heading {
+    margin: 15.3rem 0 0 16.5rem;
+    text-align: left;
+    width: min(100%, 52.4rem);
+  }
+
+  .hero .paragraph {
+    width: min(100%, 44.5rem);
+    margin: 2.4rem 0 0 16.5rem;
+    text-align: left;
+  }
+
+  .hero .cta-button {
+    margin: 4.2rem 0 0 16.5rem;
+  }
+
+  /* Call to Action */
+
+  .cta {
+    padding: 9.2rem 16.5rem;
+    background-image: url("../images/homepage/ready-bg-desktop.jpg");
+    margin-top: 16rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cta .cta-button {
+    margin: 0;
+  }
+}
