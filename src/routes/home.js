@@ -68,11 +68,13 @@ const Home = () => {
         </p>
       </section>
       <section className="menu">
-        <h2 className="subheading">A few highlights from our menu</h2>
-        <p className="paragraph">
-          We cater for all dietary requirements, but here’s a glimpse at some of
-          our diner’s favourites. Our menu is revamped every season.
-        </p>
+        <div>
+          <h2 className="subheading">A few highlights from our menu</h2>
+          <p className="paragraph">
+            We cater for all dietary requirements, but here’s a glimpse at some
+            of our diner’s favourites. Our menu is revamped every season.
+          </p>
+        </div>
         <div className="menu-items">
           <div className="menu-item-wrapper">
             <ResponsiveImage
